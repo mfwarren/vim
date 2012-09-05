@@ -57,7 +57,7 @@ vnoremap <space> zf
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-noremap <silent> w<F5> :QFix<CR>
+"noremap <silent> w<F5> :QFix<CR>
 "code complete
 inoremap <Nul> <C-x><C-o>
 

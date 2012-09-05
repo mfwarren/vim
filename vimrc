@@ -13,6 +13,8 @@ set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
 set hidden                      "Allow current buffer to be put in background
                                 "without being written to disk
+"set tags=/usr/local/bin//ctags
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 " utf8 incoding
 set encoding=utf8
 " smart indentation overriden by individual filetype settings
@@ -116,8 +118,8 @@ let NERDTreeWinSize=25
 "autocmd vimenter * if !argc() | NERDTree | endif
 
 " Python.vim config
-let python_highlight_all = 1
-let python_slow_sync = 1
+"let python_highlight_all = 1
+"let python_slow_sync = 1
 
 "status line
 set laststatus=2
@@ -154,16 +156,16 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.git/,.hg/,.svn/
 
 " virtualenv settings
 "Add the virtualenv's site-packages to vim path(if you are in a virtualenv)
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
+"py << EOF
+"import os.path
+"import sys
+"import vim
+"if 'VIRTUAL_ENV' in os.environ:
+"    project_base_dir = os.environ['VIRTUAL_ENV']
+"    sys.path.insert(0, project_base_dir)
+"    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"    execfile(activate_this, dict(__file__=activate_this))
+"EOF
 
 
 
