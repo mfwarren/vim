@@ -57,7 +57,7 @@ setlocal incsearch
 "When there is a previous search pattern, highlight all its matches
 setlocal hlsearch
 "turn on pathogen
-call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 call pathogen#helptags()
 
 " Enable file type detection
